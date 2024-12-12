@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+
+<title> a1 </title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<style>
+
+* { box-sizing: border-box; overflow-x: hidden; } /* overflow for videos */ 
+
+body { margin: 0px; background-color: lightgray;}
+
+.rule1 { overflow: hidden; background-color: #333; }
+
+.rule1 a { float: left;
+           color: #f2f2f2;
+           padding: 14px 16px;
+           text-decoration: none;
+           width: 33.33%;
+           text-align: center; }
+
+.rule1 a:hover { background-color: darkgray; color: black; }
+
+.rule2 { overflow: hidden; background-color: #333; border: 10px solid orange; }
+
+.rule2 a { float: left;
+           color: #f2f2f2;
+           padding: 12px 16px;
+           text-decoration: none; }
+
+.rule2 a:hover { background-color: darkgray; color: black; }
+
+.rule3 { position: relative;
+         left: 40px;
+         top: 10px } /* it would be left and top. need position to work. */
+
+.rule4 { color: red;
+            font-size: 100px; }
+
+.rule5 { color: blue;
+            font-size: 100px; }
+
+.rule6 { color: yellow;
+            font-size: 100px; }
+
+.rule7 { color: yellowgreen;
+            font-size: 100px; }
+
+.rule8 { color: saddlebrown;
+            font-size: 100px; }
+
+.rule9 { color:
+            font-size: 100px; }
+
+.rule10 { word-spacing: -30px; } /* 8 */
+
+#abc1 { font-size: 30px; }
+
+.rule11 { width: 15%; background-color: white; }  /* 9 */
+
+.rule11 a { display: block; text-decoration: none; border-bottom: 1px solid gray; padding: 10px; } 
+/* text-decoration no work in rule 11 or rule 12 with one more div. padding no work in rule 11 */
+
+.rule12 { position: relative; bottom: 8px; font-size: 20px; }  /* 10 */
+
+</style>
+
+</head>
+
+<body>
+
+<div class="rule1">
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="rule2">
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+</div>
+
+<br>
+
+<p class = "rule3"> 
+    rmgrfmrwm weomfefmwem wemfwepmfewpf pw,fpe,fewp,fwef gmrgeirmg 
+</p>
+
+<br>
+
+<button type = "button" class = "rule12" onclick="document.getElementById('myimage').src = 
+'https://media.giphy.com/media/xT9IgKLFbZyZYLKi1W/giphy.gif'">
+video </button>
+
+<img id = "myimage" src  
+"https://media2.giphy.com/media/8aY8KWxvrc19u/giphy.gif?cid=ecf05e47okgnqrxix2rjqyjww0a3cfag88mr25rtcjep2hif&rid=giphy.gif"
+alt="a" style = "width: 400px; height: 300px;">
+
+<button type = "button" class = "rule12" onclick="document.getElementById('myimage').src = 
+'https://media.giphy.com/media/l4hLU0BjSbMbDdVoA/giphy.gif'">
+other video </button>  
+
+<br>
+<br>
+
+<div class="rule10">
+    <span class="rule4">
+        w
+    </span>
+    <span class="rule5">
+        o
+    </span>
+    <span class="rule6">
+        r
+    </span>
+    <span class="rule7">
+        d
+    </span>
+</div>
+
+<br>
+
+<p id="abc1"> </p>
+
+<script>
+document.getElementById("abc1").innerHTML = "nothing";
+</script>
+
+<button type="button" id="seenosee">Click Me!</button>
+
+<br>
+<br>
+
+<div id = "side-bav" class = "rule11">
+        <a href = "#"> Home </a>
+        <a href = "#"> My Channel </a> 
+        <a href = "#"> Trending </a> 
+        <a href = "#"> Subscriptions </a> 
+</div>
+
+<script>
+    $(document).ready(function() 
+        { $("#seenosee").click(function() 
+            { $("#side-bav").toggle();
+        }); });
+</script>
+
+<p> make one page with react. random text. </p>
+
+</body>
+
+</html>
